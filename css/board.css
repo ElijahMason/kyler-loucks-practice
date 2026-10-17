@@ -32,6 +32,9 @@ body {
   left: 0.75rem;
   top: 0.75rem;
   transform: translateY(-160%);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   background: var(--lime);
   color: var(--night);
   padding: 0.65rem 0.9rem;
