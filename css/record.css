@@ -165,7 +165,7 @@ a {
   color: var(--seal);
 }
 
-.leaf p a {
+a.return-link {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
