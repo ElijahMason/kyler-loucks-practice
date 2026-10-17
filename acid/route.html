@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyler Loucks, route</title>
+  <meta name="description" content="How Kyler Loucks sets a deploy route, from repository to watch.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+  <a class="skip" href="#route">Skip to the route</a>
+  <header class="gantry">
+    <div class="identity">
+      <p class="who">Kyler Loucks</p>
+      <p class="desk-label">Signal desk</p>
+    </div>
+    <button type="button" class="lever" data-nav-toggle aria-expanded="false" aria-controls="levers">Board</button>
+    <nav id="levers" class="levers" data-nav aria-label="Board">
+      <a href="index.html">Board</a>
+      <a href="route.html" aria-current="page">Route</a>
+      <a href="aspects.html">Aspects</a>
+      <a href="yard.html">Yard</a>
+      <a href="desk.html">Desk</a>
+    </nav>
+  </header>
+  <main id="route">
+    <p class="desk-label">Route card</p>
+    <h1>Set the route before you move.</h1>
+    <p class="standfirst">A deploy is a route across blocks. Kyler Loucks draws that route. The pipeline is the path that can show a proceed aspect. A change made from a laptop, outside the pipeline, is a hand signal, and the board does not treat a hand signal as the route.</p>
+    <ol class="orders">
+      <li>
+        <span class="num">01</span>
+        <div>
+          <h2>Put the change in the repository</h2>
+          <p>Source control is block 1. If the change is not there, the route has not started.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <div>
+          <h2>Make the plan readable</h2>
+          <p>Infrastructure is code. Terraform belongs here when the platform is expressed as code a second person can review. The plan names the diff before apply.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <div>
+          <h2>Let interlocking hold conflicts</h2>
+          <p>Two routes into one block cannot both be clear. An unnamed environment, a second account strategy, or a bill you cannot read holds the route at stop.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">04</span>
+        <div>
+          <h2>Apply on the lined path</h2>
+          <p>CI/CD carries the change. GitOps belongs when production should follow the repository. Apply waits until the previous block has released.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">05</span>
+        <div>
+          <h2>Keep watch occupied</h2>
+          <p>The route includes the time after apply. Reliability is the watch on that block, hired as a review when you want the failure modes named.</p>
+        </div>
+      </li>
+    </ol>
+    <figure class="switch">
+      <svg viewBox="0 0 640 220" role="img" aria-labelledby="switch-title switch-desc">
+        <title id="switch-title">Two routes through a switch</title>
+        <desc id="switch-desc">A single line leaves the repository and meets a switch. One leg continues through plan and apply. The other leg ends at a stop lamp. Both legs cannot be clear at once.</desc>
+        <g fill="none" stroke="#dff25a" stroke-width="2">
+          <line x1="24" y1="110" x2="180" y2="110"/>
+          <line x1="180" y1="110" x2="360" y2="48"/>
+          <line x1="180" y1="110" x2="360" y2="172"/>
+          <line x1="360" y1="48" x2="520" y2="48"/>
+          <line x1="360" y1="172" x2="470" y2="172"/>
+          <circle cx="180" cy="110" r="7" fill="#100e24"/>
+          <circle cx="520" cy="48" r="10" fill="#dff25a"/>
+          <circle cx="490" cy="172" r="10"/>
+        </g>
+        <g fill="#f6f3ea" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="14">
+          <text x="24" y="98">repository</text>
+          <text x="250" y="36">pipeline</text>
+          <text x="250" y="204">hand signal</text>
+          <text x="536" y="52">clear</text>
+          <text x="508" y="176">stop</text>
+        </g>
+      </svg>
+      <figcaption>Interlocking. The pipeline leg can show clear. The hand-signal leg is held at stop. The switch is the rule, not a second path you hope stays quiet.</figcaption>
+    </figure>
+  </main>
+  <footer class="endplate">
+    <p>Kyler Loucks, contracting practice</p>
+    <a href="aspects.html">Aspects</a>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

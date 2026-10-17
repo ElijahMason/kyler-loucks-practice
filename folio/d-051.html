@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>051 Engagement, Kyler Loucks</title>
+  <meta name="description" content="Decision 051. How an engagement with Kyler Loucks begins.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/record.css">
+</head>
+<body>
+  <a class="skip" href="#leaf">Skip to the record</a>
+  <div class="spread">
+    <button type="button" class="spine-toggle" data-nav-toggle aria-expanded="false" aria-controls="spine">Decisions</button>
+    <nav id="spine" class="spine" data-nav aria-label="Decisions">
+      <p class="spine-mark">Loucks</p>
+      <a href="index.html"><span class="num">Ix</span><span class="gloss">Index</span></a>
+      <a href="d-014.html"><span class="num">014</span><span class="gloss">Account</span></a>
+      <a href="d-027.html"><span class="num">027</span><span class="gloss">Delivery</span></a>
+      <a href="d-038.html"><span class="num">038</span><span class="gloss">Runtime</span></a>
+      <a href="d-051.html" aria-current="page"><span class="num">051</span><span class="gloss">Engagement</span></a>
+    </nav>
+    <article class="leaf" id="leaf" tabindex="-1">
+      <header class="running">
+        <span>Loucks</span>
+        <span>051 Engagement</span>
+      </header>
+      <p class="status">Accepted as practice</p>
+      <h1><span class="numeral">051</span>Engagement</h1>
+      <h2>Context</h2>
+      <p>An engagement goes better when the first page names the system and the constraints already known. The practice sells the drawing and the work that belongs on it: cloud architecture, Kubernetes platforms, Terraform, delivery pipelines, serverless where it fits, multi-account structure, and a review of cost and reliability.</p>
+      <h2>Decision</h2>
+      <p>Begin with accounts, network, delivery, and runtime on one record. Keep the standards of 014, 027, and 038 in force: one account strategy, named environments, infrastructure as code, a pipeline you can explain, and a bill you can read. Security remains a design constraint. You can hire the cost and reliability review. This page does not substitute a claimed result for that review.</p>
+      <h2>Consequences</h2>
+      <p>The form records a brief in the browser. <span data-mail-mode>It copies the brief and shows it on this leaf.</span> It does not send the brief to a server.</p>
+      <form class="record-form" data-brief-form action="#recorded" method="post">
+        <label class="field">
+          <span>Author</span>
+          <input name="author" autocomplete="name" required>
+        </label>
+        <label class="field">
+          <span>Reply</span>
+          <input name="reply" type="email" autocomplete="email" required>
+        </label>
+        <label class="field">
+          <span>System under decision</span>
+          <textarea name="system_under_decision" required></textarea>
+        </label>
+        <label class="field">
+          <span>Decision you need</span>
+          <select name="decision_you_need" required>
+            <option value="" selected disabled>Decision</option>
+            <option>Cloud architecture</option>
+            <option>Kubernetes platforms</option>
+            <option>Terraform</option>
+            <option>Delivery pipelines</option>
+            <option>Serverless where it fits</option>
+            <option>Multi-account structure</option>
+            <option>A review of cost and reliability</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Constraints</span>
+          <textarea name="constraints"></textarea>
+        </label>
+        <button type="submit">Record the brief</button>
+      </form>
+      <div class="recorded" id="recorded">
+        <p data-brief-status role="status"></p>
+        <pre data-brief-out hidden tabindex="-1"></pre>
+      </div>
+      <noscript>
+        <p>The brief is assembled in the browser. Enable the page script, then record it again.</p>
+      </noscript>
+      <p class="page-end">Leaf 5</p>
+    </article>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>

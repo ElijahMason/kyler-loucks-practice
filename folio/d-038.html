@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>038 Runtime, Kyler Loucks</title>
+  <meta name="description" content="Decision 038. Choose Kubernetes or serverless from the workload.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/record.css">
+</head>
+<body>
+  <a class="skip" href="#leaf">Skip to the record</a>
+  <div class="spread">
+    <button type="button" class="spine-toggle" data-nav-toggle aria-expanded="false" aria-controls="spine">Decisions</button>
+    <nav id="spine" class="spine" data-nav aria-label="Decisions">
+      <p class="spine-mark">Loucks</p>
+      <a href="index.html"><span class="num">Ix</span><span class="gloss">Index</span></a>
+      <a href="d-014.html"><span class="num">014</span><span class="gloss">Account</span></a>
+      <a href="d-027.html"><span class="num">027</span><span class="gloss">Delivery</span></a>
+      <a href="d-038.html" aria-current="page"><span class="num">038</span><span class="gloss">Runtime</span></a>
+      <a href="d-051.html"><span class="num">051</span><span class="gloss">Engagement</span></a>
+    </nav>
+    <article class="leaf" id="leaf" tabindex="-1">
+      <header class="running">
+        <span>Loucks</span>
+        <span>038 Runtime</span>
+      </header>
+      <p class="status">Accepted as practice</p>
+      <h1><span class="numeral">038</span>Runtime</h1>
+      <h2>Context</h2>
+      <p>The account plan and the delivery record still need a place for the work to run. Kubernetes and serverless answer different shapes of work. Choosing one because it is familiar leaves the operational surface unmatched to the workload.</p>
+      <h2>Decision</h2>
+      <p>Use Kubernetes when workloads need a shared platform contract: how they land, how they are reached, and what they are allowed to touch. Use serverless where the work is an event and the surface to operate should stay small. Record the reason beside the choice. AWS is the ground these runtimes sit on in this practice.</p>
+      <h2>Consequences</h2>
+      <ul class="consequences">
+        <li>The runtime is a decision with a reason.</li>
+        <li>The watch surface stays matched to the work.</li>
+        <li>A platform contract is drawn before a cluster is treated as the default room.</li>
+        <li>An event-shaped workload can stay small without being forced into that cluster.</li>
+      </ul>
+      <p class="page-end">Leaf 4</p>
+    </article>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>
