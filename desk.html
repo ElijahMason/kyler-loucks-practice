@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyler Loucks, desk</title>
+  <meta name="description" content="File an order with Kyler Loucks. The desk copies a brief and shows it here.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+  <a class="skip" href="#desk">Skip to the desk</a>
+  <header class="gantry">
+    <div class="identity">
+      <p class="who">Kyler Loucks</p>
+      <p class="desk-label">Signal desk</p>
+    </div>
+    <button type="button" class="lever" data-nav-toggle aria-expanded="false" aria-controls="levers">Board</button>
+    <nav id="levers" class="levers" data-nav aria-label="Board">
+      <a href="index.html">Board</a>
+      <a href="route.html">Route</a>
+      <a href="aspects.html">Aspects</a>
+      <a href="yard.html">Yard</a>
+      <a href="desk.html" aria-current="page">Desk</a>
+    </nav>
+  </header>
+  <main id="desk">
+    <p class="desk-label">Train order</p>
+    <h1>Call the desk.</h1>
+    <p class="standfirst">Name the line you want drawn and the limits you already know. <span data-mail-mode>The form copies a brief and shows it on this page.</span> The desk does not send the brief to a server.</p>
+    <form class="order-form" data-brief-form action="#slip" method="post">
+      <label class="field">
+        <span>Caller</span>
+        <input name="caller" autocomplete="name" required>
+      </label>
+      <label class="field">
+        <span>Reply path</span>
+        <input name="reply_path" type="email" autocomplete="email" required>
+      </label>
+      <label class="field">
+        <span>The line</span>
+        <textarea name="the_line" required></textarea>
+      </label>
+      <label class="field">
+        <span>Order</span>
+        <select name="order" required>
+          <option value="" selected disabled>Order</option>
+          <option>Cloud architecture</option>
+          <option>Kubernetes platforms</option>
+          <option>Terraform</option>
+          <option>Delivery pipelines</option>
+          <option>Serverless where it fits</option>
+          <option>Multi-account structure</option>
+          <option>A review of cost and reliability</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Limits</span>
+        <textarea name="limits"></textarea>
+      </label>
+      <button type="submit">File the order</button>
+    </form>
+    <div class="slip" id="slip">
+      <p data-brief-status role="status"></p>
+      <pre data-brief-out hidden tabindex="-1"></pre>
+    </div>
+    <noscript>
+      <p>The brief is assembled in the browser. Enable the page script, then file the order again.</p>
+    </noscript>
+  </main>
+  <footer class="endplate">
+    <p>Kyler Loucks, contracting practice</p>
+    <a href="index.html">Board</a>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

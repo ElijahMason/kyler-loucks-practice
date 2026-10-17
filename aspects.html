@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyler Loucks, aspects</title>
+  <meta name="description" content="Stop, approach, and clear, as Kyler Loucks uses them on a deploy route.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+  <a class="skip" href="#aspects">Skip to the aspects</a>
+  <header class="gantry">
+    <div class="identity">
+      <p class="who">Kyler Loucks</p>
+      <p class="desk-label">Signal desk</p>
+    </div>
+    <button type="button" class="lever" data-nav-toggle aria-expanded="false" aria-controls="levers">Board</button>
+    <nav id="levers" class="levers" data-nav aria-label="Board">
+      <a href="index.html">Board</a>
+      <a href="route.html">Route</a>
+      <a href="aspects.html" aria-current="page">Aspects</a>
+      <a href="yard.html">Yard</a>
+      <a href="desk.html">Desk</a>
+    </nav>
+  </header>
+  <main id="aspects">
+    <p class="desk-label">Aspect book</p>
+    <h1>Three lamps, and the rule for each.</h1>
+    <p class="standfirst">Every block on the board carries an aspect. The lamp is a mark. The word next to it is the instruction. Fill and label travel together, so the meaning is not carried by color alone.</p>
+    <ol class="mast">
+      <li>
+        <span class="lamp stop" aria-hidden="true"></span>
+        <h2>Stop</h2>
+        <p>Do not apply. The plan is missing, the environment has no name, the account boundary conflicts with another route, or the bill cannot be read. Security is a design constraint at this lamp: identity, reach, and the data boundary have to be on the route before the aspect changes.</p>
+      </li>
+      <li>
+        <span class="lamp approach" aria-hidden="true"></span>
+        <h2>Approach</h2>
+        <p>The plan is visible and review is open. You may move toward the next block with the constraint still in view. Approach is not a permission to skip the hold.</p>
+      </li>
+      <li>
+        <span class="lamp clear" aria-hidden="true"></span>
+        <h2>Clear</h2>
+        <p>The route is lined, the block ahead is empty, and apply may proceed on the pipeline. Clear is a condition of this block. It is not a report about a client outcome.</p>
+      </li>
+    </ol>
+    <p class="standfirst">Kubernetes takes clear when the workload needs a platform contract. Serverless takes clear when the work is an event and the operational surface should stay small. The aspect follows the workload.</p>
+  </main>
+  <footer class="endplate">
+    <p>Kyler Loucks, contracting practice</p>
+    <a href="yard.html">Yard</a>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
